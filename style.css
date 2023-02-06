@@ -1,0 +1,164 @@
+/*Font DM Sans*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/*Icons BootStrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+:root{
+    --Fundo: #38E54D;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: white;
+}
+h1{
+    color: black;
+    font-weight: 700;
+    font-size: 44px;
+    padding-bottom: 10px;
+}
+p{
+    padding-bottom: 20px;
+    width: 450px;
+    text-align: center;
+    color: #3C4048;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    background: white;
+    padding:40px 0px;
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.container label{
+    padding-bottom: 10px;
+}
+.container input{
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+textarea{
+    margin-top: -10px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #ddd;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.btns button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 8px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-left: 3px solid #ddd;
+    border-right: 5px solid #ddd;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+.btns button:hover{
+    color: white;
+    transition: all ease-in .2s;
+    background: var(--Fundo);
+    border-bottom: 1px solid #0fa521;
+    border-top: 1px solid #0fa521;
+    border-left: 1px solid #0fa521;
+    border-right: 1px solid #0fa521;
+}
+.btns i{
+    padding-right: 10px;
+}
+#copy{
+    display: none;
+}
+#direitos{
+    position: absolute;
+    bottom: 35px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+#direitos a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    transition: all ease-out .2s;
+}
+#direitos a:hover{color: red;border-bottom: 2px solid red;transition: all ease-in .2s;}
+
+@media screen and (max-width: 992px){
+    h1{
+        color: black;
+        font-weight: 700;
+        font-size: 44px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px){
+    h1{
+        color: black;
+        font-weight: 700;
+        font-size: 44px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px){
+    h1{
+        color: black;
+        font-weight: 700;
+        font-size: 36px;
+        padding: 10px;
+        text-align: center;
+    }
+    p{
+        width: 70%;
+        text-align: center;
+    }
+    #direitos{
+        position: absolute;
+        bottom: -100px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px 0;
+    }
+}
