@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Gerador de Link do WhatSapp</h1>
+    <p>
+      Crie grátis seu link de WhatsApp em instantes! Compartilhe no canais
+      digitais para iniciar conversas em apenas um clique
+    </p>
+    <div class="container">
+      <label for="">Número do Whatsappp</label>
+      <input
+        type="number"
+        name=""
+        value=""
+        id="numeroWhatsapp"
+        placeholder="(DDD) Nº do celular"
+      />
+      <label for="" style="text-align: center"
+        >Sua mensagem<br />(Opcional)</label
+      >
+      <input
+        type="text"
+        id="textoWhatsapp"
+        value=""
+        placeholder="Digite a sua Mensagem"
+      /><br />
+      <textarea class="text">Copie e Edite seu Link</textarea><br />
+      <div class="btns">
+        <button id="btnClick">
+          <i class="bi bi-whatsapp" id="zap"></i>Gerar Link
+        </button>
+        <button id="copy"><i class="bi bi-clipboard-plus"></i>Copiar</button>
+      </div>
+    </div>
+    <span id="direitos">Criado por <a href="#">@VittorSerra</a></span>
+  </body>
+  <script src="code.js"></script>
+</html>
